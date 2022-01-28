@@ -97,8 +97,6 @@ def _binary_stdio():
 
 def _configure_logger(verbose=0, log_config=None, log_file=None):
     root_logger = logging.root
-    verbose = 2
-    log_file = '/tmp/pyls.log'
 
     if log_config:
         with open(log_config, 'r', encoding='utf-8') as f:
